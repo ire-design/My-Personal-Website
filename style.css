@@ -1,215 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Gabriela);
-
-/* :root
-{
-    --maincolor:#00a78e;
-    --shadow-black-100: 0 5px 15px rgba(0,0,0,0.2);
-    --black-900:#000;
-    --black-400:#646f87;
-    --black-100:#f7f7f7;
-    --white:#fff;
-    --black-alpha-100:rgba(0,0,0.5);
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-body{
-    font-family: 'Gabriela', serif;
-    font-size: 16px;
-    font-weight: normal;
-    overflow-x: hidden;
-    background-color: var(--white);
-}
-ul{
-    list-style: none;
-}
-img{
-    vertical-align: middle;
-}
-.container{
-    max-width: 1140px;
-    margin: auto;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-.justify-content-between{
-    justify-content: space-between;
-}
-.align-items-center{
-    align-items: center;
-}
-.btn-link{
-    background-color: var(--maincolor);
-    padding: 15px 40px;
-    border: none;
-    border-radius: 5px;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 600;
-    transition: all 0.3s ease-out;
-}
-.btn-link:hover{
-    color: var(--white);
-    background-color: rgba(0, 167, 142, 0.7);
-    transform: scale(0.9);
-}
-.section-padding{
-    padding: 80px 0;
-}
-.navbar{
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    padding: 25px;
-    transition: all 0.5s ease;
-}
-.navbar.sticky{
-    padding: 12px 25px;
-    background-color: var(--white);
-    box-shadow: var(--shadow-black-100);
-}
-.navbar .logo a{
-    font-size: 24px;
-    color: var(--black-900);
-    font-weight: 600;
-    text-transform: capitalize;
-}
-.navbar .logo a span{
-    color: var(--maincolor);
-}
-.navbar .menu .nav-item{
-    display: inline-block;
-    position: relative;
-    margin-left: 36px;
-}
-
-.navbar .menu  .nav-item > a{
-    color: var(--maincolor);
-    font-size: 16px;
-    font-weight: 600;
-    display: block;
-    padding: 10px 0;
-}
-.navbar.sticky .menu .nav-item > a{
-    color: var(--maincolor);
-}
-.home-section {
-    position: relative;
-    background-color: var(--black-100);
-    z-index: 1;
-    overflow-x: hidden;
-    padding-top: 80px;
-}
-.header-social {
-    position:absolute;
-    top: 60%;
-    left: 30px;
-    transform: translateY(-60%);
-    border: 1px solid rgba(0, 167, 142, 0.7);
-    border-radius: 50px;
-}
-.header-social li a{
-    font-size: 20px;
-    display: block;
-    text-align: center;
-    padding: 20px 15px;
-    color: rgba(100,111,135,0.58);
-    transform: all 0.3s ease-out 0s;
-}
-.header-social li a:hover{
-    color: var(--maincolor);
-}
-.home-section .home-text,
-.home-section .home-image{
-    flex: 0 0 50%; ensures the 2 elements take 50% space, side by side within the row 
-    max-width: 50%;
-    padding: 0 25px;
-}
-.home-section .home-text{
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: var(--maincolor);
-}
-.home-section .home-text h1{
-    font-size: 50px;
-    font-weight: 700px;
-    margin-top: 15px;
-    color: var(--black-900);
-}
-.home-section .home-text span{
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--black-900);
-    font-weight: 500;
-    display: block;
-    margin-top: 15px;
-}
-.home-section .home-text p{
-    font-size: 16px;
-    color: var(--black-400);
-    font-weight: 24px;
-    margin-top: 15px;
-}
-.home-section .home-text .btn{
-    display: inline-block;
-    margin-top: 15px;
-}
-.home-section .home-image .img-box{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    margin-top: 60px;
-    border-radius: 20px;
-}
-.home-section .home-image .img-box img{
-    
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-out;
-    border-radius: 20px;
-}
-.home-section .home-image .img-box img:hover{
-    transform: scale(0.9) translateY(10px);
-    
-}
-
-
-.about-section .about-image,
-.about-section .about-content{
-    flex: 00 50%;
-    max-width: 50%;
-    padding: 20px;
-}
-
-.about-section .about-image .img-box{
-    position: relative;
-}
-.about-section .about-image .img-box img{
-    max-width: 100%;
-    width: 100%;
-    z-index: 8;
-}
-.about-section .about-image .img-box .about-shape{
-    width: 404px;
-    height: 525px;
-    border-left: 15px solid var(--maincolor);
-    border-bottom: 15px solid var(--maincolor);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-.about-section .about-content{
-    background-color: palevioletred;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
 
 :root {
@@ -247,6 +35,9 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+span{
+    color: var(--maincolor);
+}
 
 .navbar {
     position: fixed;
@@ -256,6 +47,7 @@ body {
     padding: 20px 0;
     transition: all 0.3s ease;
     z-index: 1000;
+    background-color: rgb(206, 206, 206);
 }
 
 .navbar.sticky {
@@ -269,14 +61,14 @@ body {
     align-items: center;
 }
 
-.navbar .logo a {
-    font-size: 24px;
+.navbar .container .logo {
+    font-size: 30px;
     color: var(--black-900);
     font-weight: 600;
     text-decoration: none;
 }
 
-.navbar .logo a span {
+.navbar .logo  span {
     color: var(--maincolor);
 }
 
@@ -301,6 +93,8 @@ body {
 }
 
 .home-section {
+    
+    margin-top: 40px;
     padding-top: 100px;
     background-color: var(--black-100);
     overflow: hidden;
@@ -309,7 +103,7 @@ body {
 .header-social {
     position: absolute;
     top: 50%;
-    left: 30px;
+    left: 25px;
     transform: translateY(-50%);
     border: 1px solid rgba(0, 167, 142, 0.7);
     border-radius: 50px;
@@ -357,6 +151,7 @@ body {
 
 .home-section .home-text p {
     margin-bottom: 15px;
+    font-size: 25px;
 }
 
 .btn-link {
@@ -435,4 +230,126 @@ body {
     background-color: var(--maincolor);
     display: inline-block;
     margin-bottom: 20px;
+}
+
+.projects-section{
+    min-height: 100vh;
+    background-color: var(--black-100);
+}
+
+.section-title{
+    
+    background-color: var(--maincolor);
+}
+.section-title1{
+    padding: 20px;
+    flex: 0 0 100%;
+    color: var(--black-900);
+    background-color: var(--maincolor);
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.section-title .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--maincolor);
+}
+
+.section-title .main-title{
+    color: var(--black-900);
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.projects-section{
+    min-height: 100vh;
+    background-color: var(--black-100);
+}
+
+.projects-section .project-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-section .project-item-inner{
+    box-shadow: var(--shadow-black-100);
+    padding: 50px 15px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.projects-section .project-item-inner:hover {
+    background-color: var(--maincolor);
+    transform: translateY(-10px);
+    color: var(--white); 
+}
+.projects-section .project-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    background-color: var(--maincolor);
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 28px;
+    color: var(--white);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1; 
+    transition: all 0.3s ease;
+}
+.projects-section .project-item-inner:hover .icon{
+    background-color: var(--white);
+    color: var(--maincolor);
+    font-size: 24px;
+}
+.projects-section .project-item-inner:hover .icon h3{
+    font-size: 20px;
+    color: var(--black-900);
+    margin: 0 0 10px;
+    transition: all 0.3s ease;
+}
+.projects-section .project-item-inner >p{
+    font-size: 16px;
+    color: var(--black-400);
+    margin: 0;
+    transition: all 0.3s;
+}
+#reach-me {
+    display: flex;
+    flex-direction: column;
+}
+#contact1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 10px;
+    align-items: center;
+    list-style: none;
+}
+#contact1 >li{
+    display:inline-block ;
+    
+}
+#contact1 li a {
+    font-size: 30px;
+    color: var(--black-400);
+    padding: 10px;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+#contact1 li >a:hover{
+    color: var(--maincolor);
+    
+}
+#contact1 p{
+    text-wrap: wrap;
+    font-size: 20px;
+    font-weight: 500;
 }

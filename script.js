@@ -4,13 +4,13 @@ window.onscroll = () =>{
     this.scrollY > 20? navbar.classList.add(".sticky") : navbar.classList.remove("sticky");
 } */
 
-    // Sticky Navbar
+/*Navbar*/
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     navbar.classList.toggle('sticky', window.scrollY > 0);
 });
 
-// Smooth scrolling for anchor links
+/*Smooth scrolling*/
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
