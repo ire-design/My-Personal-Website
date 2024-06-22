@@ -3,39 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Irene Musau - Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- my navbar -->
-    <div class="navbar">
+    <nav class="navbar">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="logo"> <a href="index.html">Web<span>Craftsman</span></a></div>
-                <ul class="menu">
-                    <li class="nav-item"><a href="#home">Home <span ></span></a></li>
-                    <li class="nav-item"><a href="#about">About <span></span></a></li>
-                    <li class="nav-item"><a href="#portfolio">My Projects <span></span></a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <a href="#" class="logo">Web<span>Craftsman</span></a>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#myprojects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </div>
-    <!-- home -->
-     <section class="home-section" id="home">
-        <ul class="header-social">
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
+    </nav>
+
+    <section class="home-section" id="home">
         <div class="container">
-            <div class="row align-items-center">
+            <ul class="header-social">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            <div class="row">
                 <div class="home-text">
                     <h4>Hello</h4>
                     <h1>Irene Musau</h1>
                     <span>Web Developer</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni necessitatibus, maxime veritatis temporibus repellat quisquam consequatur voluptatem. Nostrum, accusamus explicabo. Sed, tempore? Soluta fugiat officiis illo earum. Delectus, minima.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni necessitatibus, maxime veritatis temporibus repellat quisquam consequatur voluptatem.</p>
                     <a href="#" class="btn btn-link">Let's Talk</a>
                 </div>
                 <div class="home-image">
@@ -45,8 +42,33 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-image">
+                    <div class="img-box">
+                        <img src="./irene.jpg" alt="Irene Musau">
+                        <div class="about-shape"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="section-title">
+                        <h5 class="sub-title">About</h5>
+                        <h3 class="main-title">Why would you hire me?</h3>
+                        <ul class="line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum totam consectetur quia incidunt placeat sit molestias quod libero! Fuga cupiditate veniam commodi pariatur dolorem! Expedita laudantium quaerat atque exercitationem error.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="./script.js"></script>
 </body>
 </html>
-

@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Gabriela);
 
-:root
+/* :root
 {
     --maincolor:#00a78e;
     --shadow-black-100: 0 5px 15px rgba(0,0,0,0.2);
@@ -58,12 +58,20 @@ img{
     background-color: rgba(0, 167, 142, 0.7);
     transform: scale(0.9);
 }
+.section-padding{
+    padding: 80px 0;
+}
 .navbar{
     position: fixed;
     z-index: 999;
     width: 100%;
-    background-color: gray;
     padding: 25px;
+    transition: all 0.5s ease;
+}
+.navbar.sticky{
+    padding: 12px 25px;
+    background-color: var(--white);
+    box-shadow: var(--shadow-black-100);
 }
 .navbar .logo a{
     font-size: 24px;
@@ -81,11 +89,14 @@ img{
 }
 
 .navbar .menu  .nav-item > a{
-    color: var(--white);
+    color: var(--maincolor);
     font-size: 16px;
     font-weight: 600;
     display: block;
     padding: 10px 0;
+}
+.navbar.sticky .menu .nav-item > a{
+    color: var(--maincolor);
 }
 .home-section {
     position: relative;
@@ -115,7 +126,7 @@ img{
 }
 .home-section .home-text,
 .home-section .home-image{
-    flex: 0 0 50%;/* ensures the 2 elements take 50% space, side by side within the row */
+    flex: 0 0 50%; ensures the 2 elements take 50% space, side by side within the row 
     max-width: 50%;
     padding: 0 25px;
 }
@@ -169,3 +180,259 @@ img{
     
 }
 
+
+.about-section .about-image,
+.about-section .about-content{
+    flex: 00 50%;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.about-section .about-image .img-box{
+    position: relative;
+}
+.about-section .about-image .img-box img{
+    max-width: 100%;
+    width: 100%;
+    z-index: 8;
+}
+.about-section .about-image .img-box .about-shape{
+    width: 404px;
+    height: 525px;
+    border-left: 15px solid var(--maincolor);
+    border-bottom: 15px solid var(--maincolor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.about-section .about-content{
+    background-color: palevioletred;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+:root {
+    --maincolor: #00a78e;
+    --shadow-black-100: 0 5px 15px rgba(0,0,0,0.2);
+    --black-900: #000;
+    --black-400: #646f87;
+    --black-100: #f7f7f7;
+    --white: #fff;
+    --black-alpha-100: rgba(0,0,0,0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gabriela', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--black-400);
+    overflow-x: hidden;
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar.sticky {
+    background-color: var(--white);
+    box-shadow: var(--shadow-black-100);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    color: var(--black-900);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .logo a span {
+    color: var(--maincolor);
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .menu li {
+    margin-left: 30px;
+}
+
+.navbar .menu a {
+    color: var(--maincolor);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: var(--black-900);
+}
+
+.home-section {
+    padding-top: 100px;
+    background-color: var(--black-100);
+    overflow: hidden;
+}
+
+.header-social {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    border: 1px solid rgba(0, 167, 142, 0.7);
+    border-radius: 50px;
+    padding: 10px 0;
+}
+
+.header-social li {
+    list-style: none;
+}
+
+.header-social li a {
+    font-size: 20px;
+    color: rgba(100,111,135,0.58);
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.header-social li a:hover {
+    color: var(--maincolor);
+}
+
+.home-section .home-text,
+.home-section .home-image,
+.about-section .about-image,
+.about-section .about-content {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.home-section .home-text h4 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--maincolor);
+    margin-bottom: 15px;
+}
+
+.home-section .home-text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--black-900);
+    margin-bottom: 15px;
+}
+
+.home-section .home-text p {
+    margin-bottom: 15px;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--maincolor);
+    color: var(--white);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: var(--black-900);
+    transform: translateY(-5px);
+}
+
+.home-section .home-image .img-box {
+    max-width: 400px;
+    margin: auto;
+}
+
+.home-section .home-image .img-box img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-section {
+    padding: 80px 0;
+}
+
+.about-section .about-image .img-box {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+}
+
+.about-section .about-image .img-box img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-section .about-image .about-shape {
+    width: 404px;
+    height: 525px;
+    border-left: 15px solid var(--maincolor);
+    border-bottom: 15px solid var(--maincolor);
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    z-index: -1;
+}
+
+.about-section .about-content .section-title {
+    margin-bottom: 30px;
+}
+
+.about-section .about-content .section-title h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--maincolor);
+    margin-bottom: 15px;
+}
+
+.about-section .about-content .section-title h3 {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--black-900);
+    margin-bottom: 20px;
+}
+
+.about-section .about-content .section-title .line {
+    width: 60px;
+    height: 2px;
+    background-color: var(--maincolor);
+    display: inline-block;
+    margin-bottom: 20px;
+}
