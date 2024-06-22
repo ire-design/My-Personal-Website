@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
-      <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <script src="script.js"></script>
+    <!-- my navbar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo"> <a href="index.html">Web<span>Craftsman</span></a></div>
+                <ul class="menu">
+                    <li class="nav-item"><a href="#home">Home <span ></span></a></li>
+                    <li class="nav-item"><a href="#about">About <span></span></a></li>
+                    <li class="nav-item"><a href="#portfolio">My Projects <span></span></a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- home -->
+     <section class="home-section" id="home">
+        <ul class="header-social">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="home-text">
+                    <h4>Hello</h4>
+                    <h1>Irene Musau</h1>
+                    <span>Web Developer</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni necessitatibus, maxime veritatis temporibus repellat quisquam consequatur voluptatem. Nostrum, accusamus explicabo. Sed, tempore? Soluta fugiat officiis illo earum. Delectus, minima.</p>
+                    <a href="#" class="btn btn-link">Let's Talk</a>
+                </div>
+                <div class="home-image">
+                    <div class="img-box">
+                        <img src="./image.jpg" alt="code image">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <script src="./script.js"></script>
 </body>
 </html>
+
