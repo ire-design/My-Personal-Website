@@ -322,37 +322,64 @@ span{
 #reach-me {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
 }
-#contact1 {
+#reach-me .contact-info{
+    font-size: 18px;
+}
+
+.footer {
+    background-color: var(--white);
+    padding: 25px 0 0;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.footer .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-top: 20px;
-    padding: 10px;
     align-items: center;
-    list-style: none;
 }
-#contact1 >li{
-    display:inline-block ;
-    
-}
-#contact1 li a {
-    font-size: 30px;
-    color: var(--black-400);
-    padding: 10px;
-    align-items: center;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-#contact1 li >a:hover{
-    color: var(--maincolor);
-    
-}
-#contact1 p{
-    text-wrap: wrap;
+
+#footer p{
     font-size: 20px;
     font-weight: 500;
 }
+
+.f-text,
+.footer-bottom >p {
+    font-size: 18px;
+    color: var(--black-900);
+    margin-bottom: 20px;
+}
+
+#footer .container .contact-info > li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    list-style: none; 
+    display:inline-block ;/*function yake?*/
+    font-size: 20px;
+    color: var(--black-400);
+}
+
+#footer .container .contact-info li > a{
+    text-decoration: none;
+}
+
+#footer li >a:hover{
+    color: var(--maincolor);
+}
+
+.footer-bottom {
+    font-size: 16px;
+    color: var(--black-400);
+}
+
 /*media queries*/
 @media screen  and(max-width:768px){
     .container{
